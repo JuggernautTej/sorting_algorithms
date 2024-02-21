@@ -39,7 +39,7 @@ int partition(int arr[], int low, int high)
 }
 
 /**
- * quick_sort_recursive - implements the quick sort algorithm with the Lomuto pat.
+ * quick_sort_recursive - implements the quick sort algorithm with the Lomuto
  * @arr: array of integers
  * @low: index of the first element of the partition
  * @high: the index of the last element of the partition
@@ -58,6 +58,12 @@ void quick_sort_recursive(int arr[], int low, int high)
 	}
 }
 
+/**
+ * quick_sort - the actual quick sort function
+ * @array: array to be sorted
+ * @size: size of array
+ * Return: void
+ */
 void quick_sort(int *array, size_t size)
 {
 	if (size <= 1 || array == NULL)
@@ -65,7 +71,12 @@ void quick_sort(int *array, size_t size)
 
 	quick_sort_recursive(array, 0, size - 1);
 }
-
+/**
+ * array_print - prints array
+ * @arr: an array of integers
+ * @size: size of the array
+ * Return: void
+ */
 void array_print(int arr[], size_t size)
 {
 	size_t i;
