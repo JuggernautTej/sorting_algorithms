@@ -72,9 +72,9 @@ void insertion_sort_list(listint_t **list)
 		while (prev && prev->n > curr->n)
 		{
 			swap_nodes(list, prev, curr);
-			print_list(*list);
-
 			prev = curr->prev;
+
+			print_list(*list);
 		}
 		curr = curr->next;
 	}
